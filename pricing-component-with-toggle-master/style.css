@@ -1,0 +1,225 @@
+:root {
+    --light-blue: hsl(236, 72%, 79%);
+    --dark-blue: hsl(237, 63%, 64%);
+
+    --primary-gradient: linear-gradient(var(--light-blue), var(--dark-blue));
+    
+    --very-light-grayish-blue: hsl(240, 78%, 98%);
+    --light-grayish-blue: hsl(234, 14%, 74%);
+    --grayish-blue: hsl(233, 13%, 49%);
+    --dark-grayish-blue: hsl(232, 13%, 33%);
+
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 0 2em;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--very-light-grayish-blue);
+}
+
+main {
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    margin: 1.5em 0 1em;
+    text-align: center;
+    color: var(--dark-grayish-blue);
+}
+
+button {
+    width: 85%;
+    height: 2.875em;
+    margin: 1.5em 8% 0.5em;
+    position: relative;
+    border: none;
+    border-radius: 0.675em;
+}
+
+button:hover {
+    cursor: pointer;
+    border: 0.5px solid;
+}
+
+.control {
+    margin: 0 auto 4em;
+    color: var(--grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.toggle {
+    margin: 0 2em;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark-blue);
+    border-radius: 2em;
+    transition: all .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.75em;
+  width: 1.75em;
+  left: 0.15em;
+  bottom: 0.15em;
+  background-color: var(--very-light-grayish-blue);
+  border-radius: 50%;
+  transition: all .4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(1.8em);
+}
+
+.main {
+    width: 95%;
+    margin: 2em auto;
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 0.5em;
+    padding: 2em 1.5em;
+}
+
+.card.primary {
+    background-image: var(--primary-gradient);
+}
+
+.card.light {
+    background-color: var(--white);
+}
+
+.center {
+    text-align: center;
+}
+
+.card.light .center {
+    color: var(--grayish-blue);
+    position: relative;
+}
+
+.card.primary .center {
+    color: var(--very-light-grayish-blue);
+}
+
+.card.primary hr {
+    border: 0.125px solid var(--light-grayish-blue);
+}
+
+.price {
+    margin: 0 auto 0.125em;
+    padding: 0.125em;
+    font-size: 4.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price span {
+    font-size: 0.5em;
+    display: inline-block;
+    height: 100%;
+}
+
+.gone {
+    display: none;
+}
+
+.specs {
+    padding: 1em 0;
+} 
+
+.card.primary button {
+    background-color: var(--very-light-grayish-blue);
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.card.light button {
+    background-color: var(--dark-blue);
+    color: var(--very-light-grayish-blue);
+    text-transform: uppercase;
+}
+
+.card.primary button:hover {
+    background-color: transparent;
+    color: var(--very-light-grayish-blue);
+}
+
+.card.light button:hover {
+    background-color: transparent;
+    color: var(--grayish-blue);
+}
+
+@media screen and (min-width: 750px) {
+    body {
+        background-color: var(--very-light-grayish-blue);
+        background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top right, bottom left;
+    }
+
+    .main {
+        width: 65%;
+        margin: 1em auto 2em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #basic.card.light {
+        margin: 2em -2em;
+        padding: 2em 4em 2em 2em;
+    }
+
+    #master.card.light {
+        margin: 2em -2em;
+        padding: 2em 2em 2em 4em;
+    }
+
+    .card.primary {
+        z-index: 2;
+    }
+
+    .card.primary .title {
+        margin: 2em auto 0;
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+  

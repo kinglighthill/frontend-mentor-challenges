@@ -1,0 +1,123 @@
+:root {
+    --red: hsl(0, 100%, 68%);
+    --very-dark-blue: hsl(230, 29%, 20%);
+    --dark-grayish-blue: hsl(230, 11%, 40%);
+    --grayish-blue: hsl(231, 7%, 65%);
+    --light-grayish-blue: hsl(207, 33%, 95%);
+
+    --font-size: 18px
+}
+
+*
+::after
+::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    margin: 0;;
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--font-size);
+    /* background-image: url(./images/illustration-devices.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: auto 75%; */
+    /* background-position: top right; */
+}
+
+header {
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 90%;
+    margin: 1em auto;
+    border-radius: 0.25em;
+    padding: 1em 0;
+    box-shadow: -1px 1px var(--light-grayish-blue), 1px -1px var(--light-grayish-blue);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5em;
+    text-transform: uppercase;
+}
+
+nav hr {
+    width: 80%;
+    margin: 1em auto;
+}
+
+nav .login {
+    width: 50%;
+    margin: 16px auto 0.5em;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* main {
+    position: absolute;
+    top: 0;
+} */
+
+.banner {
+    /* width: 50%; */
+    /* height: 50%; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* right: 0; */
+    /* padding: 2rem 0; */
+    /* background-image: linear-gradient(left, transparent 300px, var(--light-grayish-blue) 300px, var(--light-grayish-blue) 100%); */
+    background-color: var(--light-grayish-blue);
+    border-bottom-left-radius: 2em;
+    z-index: -1;
+}
+
+.banner img {
+    width: 1em;
+    height: 1em;
+}
+
+.icons {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gone {
+    display: none;
+}
+
+
+
+  
+<main>
+<h3 class="heading-tag">New</h3>
+<h3 class="heading">Monograph Dashboard</h3>
+
+<h3 class="title">Powerful insights into your team</h3>
+<p class="description">Project planning and time tracking for agile teams</p>
+<button id="demo-btn">Schedule a demo</button>
+<label id="live-preview" for="demo-btn">to see a live preview</label>
+</main>
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

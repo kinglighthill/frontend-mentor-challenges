@@ -1,0 +1,147 @@
+body {
+    /* background-color: hsl(0, 0%, 100%); */
+    background-color: hsl(210, 46%, 95%);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    padding: 10%;
+}
+
+img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.main-card {
+    margin: 1.5em;
+    padding: 1.75em;
+    border-radius: 10px;
+}
+
+.profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.name-verified {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin: 0 0.75em;
+}
+
+.verified-graduate {
+    margin: 0 0.75em;
+}
+
+.name.text-light {
+    color: hsl(0, 0%, 81%);
+}
+
+.name.text-dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.verified-graduate.text-light {
+    color: hsl(0, 0%, 60%);
+}
+
+.verified-graduate.text-dark {
+    color: hsl(217, 19%, 50%);
+}
+
+.review-intro {
+    font-size: 1.35em;
+}
+
+.review-paragraph {
+    font-size: 1em;
+}
+
+.review-intro.text-light {
+    color: hsl(210, 46%, 95%);
+}
+
+.review-intro.text-dark {
+    color: hsl(217, 19%, 35%);
+}
+
+.review-paragraph.text-light {
+    /* color: hsl(0, 0%, 70%); */
+    color: hsl(0, 0%, 100%);
+    opacity: 70%;
+}
+
+.review-paragraph.text-dark {
+    color: hsl(217, 19%, 70%);
+}
+
+#daniel-clifford {
+    background-color: hsl(263, 55%, 52%);
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 20%;
+}
+
+#jonathan-walters {
+    background-color: hsl(217, 19%, 35%);
+}
+
+#jeanette-harmon {
+    background-color: hsl(0, 0%, 100%);
+}
+
+#patrick-abrams {
+    background-color: hsl(219, 29%, 14%);
+}
+
+#kira-whittle {
+    background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 750px) {
+    main {
+        display: grid;
+    }
+
+    #daniel-clifford {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    #jonathan-walters {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    
+    #jeanette-harmon {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    #patrick-abrams {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 5;
+    }
+    
+    #kira-whittle {
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

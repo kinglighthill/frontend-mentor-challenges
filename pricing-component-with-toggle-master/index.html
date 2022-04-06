@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Price Component with Toggle</title>
+
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <h1>Our Pricing</h1>
+
+    <div class="control">
+      Annually
+      <label class="toggle">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+      </label>
+      Monthly
+    </div>
+
+    <div class="main">
+      <div id="basic" class="card light">
+        <p class="center title">Basic</p>
+        <div class="center price monthly"><span>&dollar;</span>19.99</div>
+        <div class="center price annually gone"><span>&dollar;</span>199.99</div> <hr>
+        <p class="center specs">500 GB Storage</p class="specs"> <hr>
+        <p class="center specs">2 Users Allowed</p class="specs"> <hr>
+        <p class="center specs">Send up to 3 GB</p class="specs"> <hr>
+        <button>Learn More</button>
+      </div>
+  
+      <div id="professional" class="card primary">
+        <p class="center title">Professional</p>
+        <div class="center price monthly"><span>&dollar;</span>24.99</div>
+        <div class="center price annually gone"><span>&dollar;</span>249.99</div> <hr>
+        <p class="center specs">1 TB Storage</p class="specs"> <hr>
+        <p class="center specs">5 Users Allowed</p class="specs"> <hr>
+        <p class="center specs">Send up to 10 GB</p class="specs"> <hr>
+        <button>Learn More</button>
+      </div>
+  
+      <div id="master" class="card light">
+        <p class="center title">Master</p>
+        <div class="center price monthly"><span>&dollar;</span>39.99</div>
+        <div class="center price annually gone"><span>&dollar;</span>399.99</div> <hr>
+        <p class="center specs">2 TB Storage</p class="specs"> <hr>
+        <p class="center specs">10 Users Allowed</p class="specs"> <hr>
+        <p class="center specs">Send up to 20 GB</p class="specs"> <hr>
+        <button>Learn More</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kingsley .C. Ugwudinso</a>.
+  </footer>
+
+  <script type="text/javascript" src="./index.js"> </script>
+</body>
+</html>
